@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffc3db;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 120px; /* espacio para la barra inferior */
+}
+
+/* Barra superior */
+.barra-superior {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  height: 80px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  border-radius: 0 0 15px 15px;
+}
+
+.barra-superior .regreso {
+  position: absolute;
+  left: 25px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+/* Texto principal */
+.texto-superior {
+  margin: 60px 0 40px 0;
+  font-size: 34px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Contenedor rosa */
+.contenedor-rosa {
+  background-color: #ffb6ce;
+  border-radius: 45px;
+  padding: 90px;
+  width: 90%;
+  max-width: 2300px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Tarjetas dentro del contenedor */
+.tarjetas-largas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+/* Tarjeta individual */
+.tarjeta-larga {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  padding: 40px;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-larga:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.tarjeta-larga h3 {
+  color: #007bff;
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.tarjeta-larga p {
+  margin: 12px 0;
+  font-size: 22px;
+  color: #444;
+}
+
+/* Barra inferior */
+.barra-inferior {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.barra-inferior button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.barra-inferior .icono {
+  font-size: 48px;
+  margin-bottom: 5px;
+}

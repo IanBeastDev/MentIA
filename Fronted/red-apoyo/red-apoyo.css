@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Barra superior */
+.barra-superior {
+
+  font-family: Arial, sans-serif;    
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  height: 60px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  border-radius: 0 0 10px 10px;
+}
+
+.barra-superior .regreso {
+  position: absolute;
+  left: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Texto motivacional centrado */
+.texto-superior {
+
+  font-family: Arial, sans-serif;    
+  margin: 60px 0 30px 0;
+  font-size: 22px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Contenedor para centrar la barra doble */
+.contenedor-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* ocupa el espacio disponible */
+  width: 100%;
+}
+
+/* Barra doble centrada */
+.barra-doble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  border-radius: 40px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1600px;
+  height: 70px;
+}
+
+.barra-doble button {
+  flex: 1;
+  height: 100%;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.barra-doble button:hover {
+  background-color: #007bff;
+}
+
+/* Barra inferior */
+.barra-inferior {
+  font-family: Arial, sans-serif;    
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.barra-inferior button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.barra-inferior .icono {
+  font-size: 40px;
+  margin-bottom: 5px;
+}

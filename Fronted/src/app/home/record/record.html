@@ -1,0 +1,49 @@
+<div class="contenedor">
+  <div class="cuadro">
+    <img
+      src="https://i.ibb.co/wZ5xFz4N/image-Photoroom-1.png"
+      alt="Logo"
+      class="imagen"
+    />
+
+    <h2 class="titulo">Crear cuenta en MentIA</h2>
+    <h3 class="titulo2">Registrarte para comenzar tu camino</h3>
+
+    <form class="formulario" (ngSubmit)="registrar()">
+      <input
+        type="text"
+        placeholder="Usuario"
+        class="input"
+        [(ngModel)]="usuario"
+        name="usuario"
+        required
+      />
+
+      <input
+        type="email"
+        placeholder="Correo electrónico"
+        class="input"
+        [(ngModel)]="email"
+        name="email"
+        required
+      />
+
+      <input
+        type="password"
+        placeholder="Contraseña"
+        class="input"
+        [(ngModel)]="contrasena"
+        name="contrasena"
+        required
+      />
+
+  <button type="submit" class="boton">Crear cuenta</button>
+
+
+    </form>
+
+    <button class="boton-secundario" (click)="irHome()">
+      ¿Ya tienes cuenta? Inicia sesión aquí
+    </button>
+  </div>
+</div>
